@@ -2,4 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/nguyen95/public_html/
-    - /bin/cp -R build $DEPLOYPATH
+    - /bin/cp build/* $DEPLOYPATH
+    - /bin/cp -R build/static $DEPLOYPATH
